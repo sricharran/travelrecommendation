@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #000000cc, #353738cc);
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.logo:hover,
+.logo:visited,
+.logo:active {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* ================= HERO ================= */
+.contact-section {
+    min-height: 100vh;
+    background: url(../background/mae-black-uZE-diplqK4-unsplash.jpg) center/cover no-repeat;
+    position: relative;
+    padding-top: 100px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* ================= LAYOUT ================= */
+.contact-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    height: calc(100vh - 100px);
+    color: white;
+}
+
+/* LEFT TEXT */
+.contact-left h1 {
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.contact-left p {
+    margin-top: 15px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* RIGHT FORM */
+.contact-right {
+    width: 420px;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(3px);
+    padding: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #5f6161;
+}
+
+/* BUTTON */
+.contact-form button {
+    width: 100%;
+    background: #5f6161;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-icons {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    z-index: 3;
+}
+
+.social-icons img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.25s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}

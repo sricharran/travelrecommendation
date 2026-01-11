@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #000000cc, #353738cc);
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    background: white;
+    padding: 5px;
+    border-radius: 30px;
+    gap: 6px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    width: 220px;
+}
+
+.search-btn {
+    background: #1f2222;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    background: #e0e0e0;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: url(../background/mae-black-uZE-diplqK4-unsplash.jpg)
+        center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Social icons */
+.social-icons {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-left: 120px;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+.book-btn {
+    background: #1f2020;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+    margin-bottom: 2px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+.recommendations {
+    position: absolute;
+    top: 100px;              /* below navbar */
+    right: 30px;
+
+    width: 420px;
+    max-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    overflow-y: auto;
+    z-index: 5;
+}
+
+/* Individual recommendation card */
+.recommendation-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Image */
+.recommendation-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Text area */
+.recommendation-content {
+    padding: 16px;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+
+.recommendation-content h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.recommendation-content p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+/* Visit button */
+.recommendation-content button {
+    background: #292b2a;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.recommendation-content button:hover {
+    background: #115e59;
+}
+
+/* Scrollbar (optional polish) */
+.recommendations::-webkit-scrollbar {
+    width: 6px;
+}
+
+.recommendations::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 10px;
+}

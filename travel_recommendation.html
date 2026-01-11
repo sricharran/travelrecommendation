@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voyagea</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="travel_recommendation.html" class="logo">✈ Voyagea</a>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+        <button class="search-btn" onclick="searchDestination()">Search</button>
+        <button class="clear-btn" onclick="clearResults()">Clear</button>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="social-icons">
+        <img src="icons/twitter.png" alt="X">
+        <img src="icons/facebook.png" alt="Facebook">
+        <img src="icons/instagram.png" alt="Instagram">
+        <img src="icons/youtube.png" alt="YouTube">
+    </div>
+
+    <div class="hero-content">
+        <h1>EXPLORE<br>YOUR<br>VOYAGE</h1>
+
+        <p>
+            At Voyagea, every journey is an invitation to explore new horizons,
+            experience vibrant cultures, and discover destinations that leave
+            a lasting impression on your soul.
+        </p>
+
+        <button class="book-btn">BOOK NOW</button>
+    </div>
+</section>
+
+<!-- RECOMMENDATION RESULTS -->
+<section class="recommendations" id="recommendations"></section>
+
+<script src="scripts/travel_recommendation.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "destinations": [
+    {
+      "id": 1,
+      "name": "Australia",
+      "cities": [
+        {
+          "id": 101,
+          "name": "Sydney",
+          "country": "Australia",
+          "imageUrl": "images/sydney.png",
+          "description": "A vibrant harbor city famous for the Sydney Opera House, Harbour Bridge, and beautiful beaches like Bondi.",
+          "highlights": ["Sydney Opera House", "Bondi Beach", "Harbour Bridge"],
+          "bestTimeToVisit": "September to November, March to May"
+        },
+        {
+          "id": 102,
+          "name": "Melbourne",
+          "country": "Australia",
+          "imageUrl": "images/melbourne.png",
+          "description": "Australia’s cultural capital, known for street art, coffee culture, sports, and live music.",
+          "highlights": ["Federation Square", "Great Ocean Road", "Laneways & Cafes"],
+          "bestTimeToVisit": "March to May, September to November"
+        },
+        {
+          "id": 103,
+          "name": "Perth",
+          "country": "Australia",
+          "imageUrl": "images/perth.png",
+          "description": "A relaxed city on Australia’s west coast, offering stunning beaches, sunny weather, and access to natural wonders.",
+          "highlights": ["Kings Park", "Cottesloe Beach", "Rottnest Island"],
+          "bestTimeToVisit": "September to November, March to May"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Japan",
+      "cities": [
+        {
+          "id": 201,
+          "name": "Tokyo",
+          "country": "Japan",
+          "imageUrl": "images/tokyo.png",
+          "description": "A bustling мегacity blending ultramodern technology with traditional temples and culture.",
+          "highlights": ["Shibuya Crossing", "Tokyo Tower", "Senso-ji Temple"],
+          "bestTimeToVisit": "March to April, October to November"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "United States",
+      "cities": [
+        {
+          "id": 301,
+          "name": "New York City",
+          "country": "USA",
+          "imageUrl": "images/nyc.png",
+          "description": "The city that never sleeps, known for iconic landmarks, diverse culture, and world-class entertainment.",
+          "highlights": ["Statue of Liberty", "Times Square", "Central Park"],
+          "bestTimeToVisit": "April to June, September to November"
+        },
+        {
+          "id": 302,
+          "name": "California",
+          "country": "USA",
+          "imageUrl": "images/california.png",
+          "description": "A diverse state offering beaches, tech hubs, national parks, and vibrant cities like Los Angeles and San Francisco.",
+          "highlights": ["Golden Gate Bridge", "Hollywood", "Yosemite National Park"],
+          "bestTimeToVisit": "May to October"
+        }
+      ]
+    }
+  ]
+}
